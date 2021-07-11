@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interfaces</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" medía="screen,projection" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">Juntos</a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Información </a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+            <li>
+              <a href="#">Descargas</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons left">person</i>Bienvenida Usuario</a>
+            </li>
+          </ul>
+
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Ingresar</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+      <nav>
+        <div class="nav-wrapper indigo">
+          <div class="row">
+            <div class="col s12">
+              <a href="#!" class="breadcrumb">Inicio</a>
+              <a href="#!" class="breadcrumb">Dashboard</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="header indigo-text">Dashboard</h5>           
+              <div class="row">
+                <div class="col s12 m6">
+                  <div>
+                    <h5 class="card-title"><strong> Información  del día</strong></h5>
+
+                    <div class="btn-flat disabled block"><i class="small material-icons left">access_time</i><strong>16/07/2021</strong></div>
+                    <div class="btn-flat disabled block"><i class="small material-icons left">alarm_on</i><strong>07:30 AM</strong></div>
+                    <div class="btn-flat disabled block"><i class="small material-icons left">wb_sunny</i><strong>20 °</strong></div>
+                    <div class="btn-flat disabled block"><i class="small material-icons left">invert_colors</i><strong>80%</strong></div>
+                  </div>
+                  <div>
+                    <h5 class="header"><strong>Me siento:</strong></h5>
+                    <a class="btn-flat btn-large waves-effect waves-light face-icon-button tooltipped" data-tooltip="Bien" data-position="bottom">
+                      <i class="large material-icons">tag_faces </i></a
+                    >
+                    <a class="btn-flat btn-large waves-effect waves-light face-icon-button tooltipped" data-tooltip="Normal" data-position="bottom"
+                      ><i class="large material-icons">sentiment_neutral</i></a
+                    >
+                    <a class="btn-flat btn-large waves-effect waves-light face-icon-button tooltipped" data-tooltip="Mal" data-position="bottom"
+                      ><i class="large material-icons">sentiment_dissatisfied</i></a
+                    >
+                  </div>
+                  <div>
+                    <h5 class="header"><strong>Rigidez:</strong></h5>
+                    <a class="btn-flat btn-large waves-effect waves-light face-icon-button tooltipped" data-tooltip="Bien" data-position="bottom"
+                      ><i class="large material-icons">tag_faces </i></a
+                    >
+                    <a class="btn-flat btn-large waves-effect waves-light face-icon-button tooltipped" data-tooltip="Normal" data-position="bottom"
+                      ><i class="large material-icons">sentiment_neutral</i></a
+                    >
+                    <a class="btn-flat btn-large waves-effect waves-light face-icon-button tooltipped" data-tooltip="Mal" data-position="bottom"
+                      ><i class="large material-icons">sentiment_dissatisfied</i></a
+                    >
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <h5 class="card-title"><strong> Analisis de bienestar</strong></h5>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card small horizontal">
+                <div class="card-image v-center">
+                  <i class="large material-icons indigo-text">today</i>
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <span class="card-title"><strong> Mes</strong></span>
+                    <p>Información  y detalles sobre el mes actual, nivel de rigidez y bienestar.</p>
+                  </div>
+                  <div class="card-action center">
+                    <a href="#" class="btn-small waves-effect waves-light indigo"><i class="material-icons left">remove_red_eye</i>Ver</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card small horizontal">
+                <div class="card-image v-center">
+                  <i class="large material-icons indigo-text">help_outline</i>
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <span class="new badge indigo">4</span>
+                    <span class="card-title"><strong> Consejos</strong></span>
+                    <p>Tienes nuevos consejos para mejorar tu bienestar.</p>
+                  </div>
+                  <div class="card-action center">
+                    <a href="#" class="btn-small waves-effect waves-light indigo"><i class="material-icons left">remove_red_eye</i>Ver</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card small horizontal">
+                <div class="card-image v-center">
+                  <i class="large material-icons indigo-text">fitness_center</i>
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <span class="new badge indigo">2</span>
+                    <span class="card-title"><strong> Ejercicios</strong></span>
+                    <p>Ejercicios y Actividades que ayudan a calmar el dolor.</p>
+                  </div>
+                  <div class="card-action center">
+                    <a href="#" class="btn-small waves-effect waves-light indigo"><i class="material-icons left">remove_red_eye</i>Ver</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer indigo">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Juntos App</h5>
+            <p class="grey-text text-lighten-4">
+              Somos un grupo de especialistas dedicado al bienestar de los pacientes con Artritis. Nuestro objetivo es ayudar en el día a día, dando consejos y herramientas para
+              aquellos que lo necesiten.
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Nosotros</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Juntos App</a></li>
+              <li><a class="white-text" href="#!">Contacto</a></li>
+              <li><a class="white-text" href="#!">Ayuda</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">Hecho por: Franco - Tomasin</div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/chart.js"></script>
+</html>
