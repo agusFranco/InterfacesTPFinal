@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trabajo Practico Visualizacion e Interfaces</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" medía="screen,projection" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">Juntos</a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Información </a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+            <li>
+              <a href="#">Descargas</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons left">person</i>Ingresar</a>
+            </li>
+          </ul>
+
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Ingresar</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+      <nav>
+        <div class="nav-wrapper indigo">
+          <div class="row">
+            <div class="col s12">
+              <a href="#!" class="breadcrumb">Inicio</a>
+              <a href="#!" class="breadcrumb">Ingresar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4 center push-m4">
+            <div class="row card hoverable">
+              <div class="col s12">
+                <ul class="tabs">
+                  <li class="tab col s6"><a class="active indigo-text" href="#ingresar">Ingresar</a></li>
+                  <li class="tab col s6"><a href="#registrarse" class="indigo-text">Registrarse</a></li>
+                </ul>
+              </div>
+              <div id="ingresar" class="col s12">
+                <div class="row">
+                  <div class="col s12 center">
+                    <h5>INICIAR SESIÓN</h5>
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate" />
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate" />
+                          <label for="password">Password</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <a class="btn btn-large waves-effect waves-light indigo"> Ingresar </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div id="registrarse" class="col s12">
+                <div class="row">
+                  <div class="col s12 center">
+                    <h5>CREAR UNA CUENTA</h5>
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate" />
+                          <label for="email">Email</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12 m6">
+                          <input id="first_name" type="text" class="validate" />
+                          <label for="first_name">Nombre</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                          <input id="last_name" type="text" class="validate" />
+                          <label for="last_name">Apellido</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12 m6">
+                          <input id="password" type="password" class="validate" />
+                          <label for="password">Password</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                          <input id="confirmpassword" type="password" class="validate" />
+                          <label for="confirmpassword">Confirmar Password</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <a class="btn btn-large waves-effect waves-light indigo"> Submit </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer indigo">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Juntos App</h5>
+            <p class="grey-text text-lighten-4">
+              Somos un grupo de especialistas dedicado al bienestar de los pacientes con Artritis. Nuestro objetivo es ayudar en el día a día, dando consejos y herramientas para
+              aquellos que lo necesiten.
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Nosotros</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Juntos App</a></li>
+              <li><a class="white-text" href="#!">Contacto</a></li>
+              <li><a class="white-text" href="#!">Ayuda</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">Hecho por: Franco - Tomasin</div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/chart.js"></script>
+</html>
