@@ -151,4 +151,9 @@ footer.page-footer {
 
 .tabs .indicator {
   background-color:indigo;
-} /*Co
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: white;
+    outline: none;
+}
